@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://coderic.net/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Disallow authentication pages
+Disallow: /callback
+Disallow: /logout
