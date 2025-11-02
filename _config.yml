@@ -1,4 +1,5 @@
 url: "https://coderic.net"
-title: "Coderic Hub"
+title: "Coderic Content Hub"
+description: "Public content network - Access shared APIs and datasets from the Coderic network"
 network: "HUB"
 remote_theme: Coderic/coderic.org

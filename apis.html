@@ -1,0 +1,68 @@
+---
+layout: layout_en
+navigation: portal.html
+title: Public APIs
+permalink: /apis
+---
+<div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+    <div class="mb-8">
+        <h1 class="text-4xl font-bold text-gray-800 mb-4">Public APIs</h1>
+        <p class="text-lg text-gray-600">Access shared content through our RESTful APIs. All endpoints are publicly available for integration.</p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+            <div class="flex items-center mb-4">
+                <svg class="w-8 h-8 text-orange-500 mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M8,3A2,2 0 0,0 6,5V9A2,2 0 0,1 4,11H3V13H4A2,2 0 0,1 6,15V19A2,2 0 0,0 8,21H10V19H8V14A2,2 0 0,0 6,12A2,2 0 0,0 8,10V5H10V3M16,3A2,2 0 0,1 18,5V9A2,2 0 0,0 20,11H21V13H20A2,2 0 0,0 18,15V19A2,2 0 0,1 16,21H14V19H16V14A2,2 0 0,1 18,12A2,2 0 0,1 16,10V5H14V3H16Z"/>
+                </svg>
+                <h3 class="text-xl font-semibold text-gray-800">REST API</h3>
+            </div>
+            <p class="text-gray-600 mb-4">Standard RESTful API endpoints for content access.</p>
+            <code class="bg-gray-100 p-2 rounded text-sm block">GET https://api.coderic.net/v1/content</code>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+            <div class="flex items-center mb-4">
+                <svg class="w-8 h-8 text-orange-500 mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M2,5.27L3.28,4L20,20.72L18.73,22L14.73,18H3V13H8.73L7.73,12H3V7H5.73L2,3.27M14,13H9.27L14,17.73V13M21,13H16V18H13.27L10,14.73V12H21V13Z"/>
+                </svg>
+                <h3 class="text-xl font-semibold text-gray-800">GraphQL</h3>
+            </div>
+            <p class="text-gray-600 mb-4">Query content with GraphQL for flexible data retrieval.</p>
+            <code class="bg-gray-100 p-2 rounded text-sm block">POST https://api.coderic.net/graphql</code>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+            <div class="flex items-center mb-4">
+                <svg class="w-8 h-8 text-orange-500 mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M2,10.96C2.05,10.5 2.5,10 3,10H4.56C5.07,10 5.54,10.46 5.59,10.96L6,14.4C6.05,14.91 5.59,15.36 5.09,15.36H3.91C3.41,15.36 2.95,14.91 3,14.4L2,10.96M11,8.96C11.05,8.5 11.5,8 12,8H13.56C14.07,8 14.54,8.46 14.59,8.96L15,12.4C15.05,12.91 14.59,13.36 14.09,13.36H12.91C12.41,13.36 11.95,12.91 12,12.4L11,8.96M20,10.96C20.05,10.5 20.5,10 21,10H22.56C23.07,10 23.54,10.46 23.59,10.96L24,14.4C24.05,14.91 23.59,15.36 23.09,15.36H21.91C21.41,15.36 20.95,14.91 21,14.4L20,10.96Z"/>
+                </svg>
+                <h3 class="text-xl font-semibold text-gray-800">WebSocket</h3>
+            </div>
+            <p class="text-gray-600 mb-4">Real-time data streaming through WebSocket connections.</p>
+            <code class="bg-gray-100 p-2 rounded text-sm block">wss://ws.coderic.net/stream</code>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+            <div class="flex items-center mb-4">
+                <svg class="w-8 h-8 text-orange-500 mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/>
+                </svg>
+                <h3 class="text-xl font-semibold text-gray-800">Public CDN</h3>
+            </div>
+            <p class="text-gray-600 mb-4">Content delivery network for fast global access.</p>
+            <code class="bg-gray-100 p-2 rounded text-sm block">https://cdn.coderic.net/assets/</code>
+        </div>
+    </div>
+
+    <div class="mt-12 bg-gray-50 p-8 rounded-lg">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">API Authentication</h2>
+        <p class="text-gray-600 mb-4">All APIs are publicly accessible. No authentication required for read-only operations.</p>
+        <div class="bg-white p-4 rounded border border-gray-200">
+            <h3 class="font-semibold mb-2">Example Request:</h3>
+            <pre class="bg-gray-900 text-green-400 p-4 rounded overflow-x-auto"><code>curl -X GET "https://api.coderic.net/v1/content" \
+     -H "Accept: application/json"</code></pre>
+        </div>
+    </div>
+</div>
