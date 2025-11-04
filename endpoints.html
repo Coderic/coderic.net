@@ -4,115 +4,83 @@ navigation: portal.html
 title: Endpoints
 permalink: /endpoints
 ---
-<div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
-    <div class="mb-8">
-        <h1 class="text-4xl font-bold text-gray-800 mb-4">API Endpoints</h1>
-        <p class="text-lg text-gray-600">Direct access points to the Coderic Content Network. All endpoints are publicly accessible.</p>
-    </div>
-    
-    <div class="space-y-4 mt-8">
-        <div class="bg-white p-6 rounded-lg shadow-md">
-            <div class="flex items-start justify-between">
-                <div class="flex-1">
-                    <div class="flex items-center mb-2">
-                        <span class="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded mr-3">GET</span>
-                        <code class="text-lg font-mono">/v1/content</code>
-                    </div>
-                    <p class="text-gray-600 mb-3">Retrieve all available content from the network.</p>
-                    <div class="bg-gray-50 p-3 rounded">
-                        <p class="text-sm font-semibold mb-1">Example:</p>
-                        <code class="text-sm text-gray-700">https://api.coderic.net/v1/content</code>
-                    </div>
+<div class="bg-gradient-to-br from-green-50 to-white py-12 sm:py-16 lg:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12 lg:mb-16">
+            <div class="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17,12V3A1,1 0 0,0 16,2H3A1,1 0 0,0 2,3V17L6,13H16A1,1 0 0,0 17,12M21,6H19V15H6V17A1,1 0 0,0 7,18H18L22,22V7A1,1 0 0,0 21,6Z"/>
+                </svg>
+                Endpoints
+            </div>
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">API Endpoints</h1>
+            <p class="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto">
+                Direct access points to the Coderic Content Network. All endpoints are publicly accessible.
+            </p>
+        </div>
+        
+        <div class="space-y-4 mb-12">
+            <div class="bg-white rounded-xl shadow-md p-4 sm:p-6 border border-gray-200 hover:shadow-lg transition-shadow">
+                <div class="flex flex-col sm:flex-row sm:items-center gap-3 mb-3">
+                    <span class="inline-flex items-center justify-center bg-green-100 text-green-800 text-xs font-bold px-3 py-1.5 rounded-full">GET</span>
+                    <code class="text-base sm:text-lg font-mono text-gray-900 break-all">/v1/content</code>
+                </div>
+                <p class="text-sm sm:text-base text-gray-600 mb-3">Retrieve all available content from the network</p>
+                <div class="bg-gray-50 rounded-lg p-3 overflow-x-auto">
+                    <code class="text-xs sm:text-sm text-gray-700 break-all">https://api.coderic.net/v1/content</code>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md p-4 sm:p-6 border border-gray-200 hover:shadow-lg transition-shadow">
+                <div class="flex flex-col sm:flex-row sm:items-center gap-3 mb-3">
+                    <span class="inline-flex items-center justify-center bg-green-100 text-green-800 text-xs font-bold px-3 py-1.5 rounded-full">GET</span>
+                    <code class="text-base sm:text-lg font-mono text-gray-900 break-all">/v1/content/{id}</code>
+                </div>
+                <p class="text-sm sm:text-base text-gray-600 mb-3">Get specific content by ID</p>
+                <div class="bg-gray-50 rounded-lg p-3 overflow-x-auto">
+                    <code class="text-xs sm:text-sm text-gray-700 break-all">https://api.coderic.net/v1/content/abc123</code>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md p-4 sm:p-6 border border-gray-200 hover:shadow-lg transition-shadow">
+                <div class="flex flex-col sm:flex-row sm:items-center gap-3 mb-3">
+                    <span class="inline-flex items-center justify-center bg-green-100 text-green-800 text-xs font-bold px-3 py-1.5 rounded-full">GET</span>
+                    <code class="text-base sm:text-lg font-mono text-gray-900 break-all">/v1/datasets</code>
+                </div>
+                <p class="text-sm sm:text-base text-gray-600 mb-3">List all available datasets</p>
+                <div class="bg-gray-50 rounded-lg p-3 overflow-x-auto">
+                    <code class="text-xs sm:text-sm text-gray-700 break-all">https://api.coderic.net/v1/datasets</code>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md p-4 sm:p-6 border border-gray-200 hover:shadow-lg transition-shadow">
+                <div class="flex flex-col sm:flex-row sm:items-center gap-3 mb-3">
+                    <span class="inline-flex items-center justify-center bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1.5 rounded-full">POST</span>
+                    <code class="text-base sm:text-lg font-mono text-gray-900 break-all">/graphql</code>
+                </div>
+                <p class="text-sm sm:text-base text-gray-600 mb-3">GraphQL endpoint for flexible queries</p>
+                <div class="bg-gray-50 rounded-lg p-3 overflow-x-auto">
+                    <code class="text-xs sm:text-sm text-gray-700 break-all">https://api.coderic.net/graphql</code>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md p-4 sm:p-6 border border-gray-200 hover:shadow-lg transition-shadow">
+                <div class="flex flex-col sm:flex-row sm:items-center gap-3 mb-3">
+                    <span class="inline-flex items-center justify-center bg-purple-100 text-purple-800 text-xs font-bold px-3 py-1.5 rounded-full">WS</span>
+                    <code class="text-base sm:text-lg font-mono text-gray-900 break-all">/stream</code>
+                </div>
+                <p class="text-sm sm:text-base text-gray-600 mb-3">WebSocket endpoint for real-time streaming</p>
+                <div class="bg-gray-50 rounded-lg p-3 overflow-x-auto">
+                    <code class="text-xs sm:text-sm text-gray-700 break-all">wss://ws.coderic.net/stream</code>
                 </div>
             </div>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow-md">
-            <div class="flex items-start justify-between">
-                <div class="flex-1">
-                    <div class="flex items-center mb-2">
-                        <span class="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded mr-3">GET</span>
-                        <code class="text-lg font-mono">/v1/content/{id}</code>
-                    </div>
-                    <p class="text-gray-600 mb-3">Get specific content by ID.</p>
-                    <div class="bg-gray-50 p-3 rounded">
-                        <p class="text-sm font-semibold mb-1">Example:</p>
-                        <code class="text-sm text-gray-700">https://api.coderic.net/v1/content/abc123</code>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="bg-white p-6 rounded-lg shadow-md">
-            <div class="flex items-start justify-between">
-                <div class="flex-1">
-                    <div class="flex items-center mb-2">
-                        <span class="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded mr-3">GET</span>
-                        <code class="text-lg font-mono">/v1/datasets</code>
-                    </div>
-                    <p class="text-gray-600 mb-3">List all available datasets.</p>
-                    <div class="bg-gray-50 p-3 rounded">
-                        <p class="text-sm font-semibold mb-1">Example:</p>
-                        <code class="text-sm text-gray-700">https://api.coderic.net/v1/datasets</code>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="bg-white p-6 rounded-lg shadow-md">
-            <div class="flex items-start justify-between">
-                <div class="flex-1">
-                    <div class="flex items-center mb-2">
-                        <span class="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded mr-3">GET</span>
-                        <code class="text-lg font-mono">/v1/datasets/{name}</code>
-                    </div>
-                    <p class="text-gray-600 mb-3">Download specific dataset by name.</p>
-                    <div class="bg-gray-50 p-3 rounded">
-                        <p class="text-sm font-semibold mb-1">Example:</p>
-                        <code class="text-sm text-gray-700">https://api.coderic.net/v1/datasets/content-data</code>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="bg-white p-6 rounded-lg shadow-md">
-            <div class="flex items-start justify-between">
-                <div class="flex-1">
-                    <div class="flex items-center mb-2">
-                        <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mr-3">POST</span>
-                        <code class="text-lg font-mono">/graphql</code>
-                    </div>
-                    <p class="text-gray-600 mb-3">GraphQL endpoint for flexible queries.</p>
-                    <div class="bg-gray-50 p-3 rounded">
-                        <p class="text-sm font-semibold mb-1">Example:</p>
-                        <code class="text-sm text-gray-700">https://api.coderic.net/graphql</code>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="bg-white p-6 rounded-lg shadow-md">
-            <div class="flex items-start justify-between">
-                <div class="flex-1">
-                    <div class="flex items-center mb-2">
-                        <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2 py-1 rounded mr-3">WS</span>
-                        <code class="text-lg font-mono">/stream</code>
-                    </div>
-                    <p class="text-gray-600 mb-3">WebSocket endpoint for real-time content streaming.</p>
-                    <div class="bg-gray-50 p-3 rounded">
-                        <p class="text-sm font-semibold mb-1">Example:</p>
-                        <code class="text-sm text-gray-700">wss://ws.coderic.net/stream</code>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="mt-12 bg-gray-50 p-8 rounded-lg">
-        <h2 class="text-2xl font-bold text-gray-800 mb-4">Response Format</h2>
-        <p class="text-gray-600 mb-4">All API endpoints return JSON responses with the following structure:</p>
-        <div class="bg-white p-4 rounded border border-gray-200">
-            <pre class="bg-gray-900 text-green-400 p-4 rounded overflow-x-auto"><code>{
+        <div class="bg-white rounded-xl shadow-lg p-6 sm:p-8 border-2 border-green-200 mb-8">
+            <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">Response Format</h2>
+            <p class="text-sm sm:text-base text-gray-600 mb-4">All API endpoints return JSON responses:</p>
+            <div class="bg-gray-900 rounded-lg p-4 sm:p-6 overflow-x-auto">
+                <pre class="text-xs sm:text-sm text-green-400"><code>{
   "status": "success",
   "data": { ... },
   "meta": {
@@ -120,11 +88,12 @@ permalink: /endpoints
     "version": "1.0"
   }
 }</code></pre>
+            </div>
         </div>
-    </div>
 
-    <div class="mt-8 bg-orange-50 border-l-4 border-orange-500 p-6 rounded">
-        <h3 class="font-semibold text-orange-900 mb-2">Rate Limiting</h3>
-        <p class="text-orange-800">Public endpoints have a rate limit of 1000 requests per hour per IP address.</p>
+        <div class="bg-orange-50 border-l-4 border-orange-500 p-4 sm:p-6 rounded-lg">
+            <h3 class="text-base sm:text-lg font-semibold text-orange-900 mb-2">Rate Limiting</h3>
+            <p class="text-sm sm:text-base text-orange-800">Public endpoints have a rate limit of 1000 requests per hour per IP address.</p>
+        </div>
     </div>
 </div>
