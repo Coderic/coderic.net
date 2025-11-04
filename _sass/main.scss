@@ -1,23 +1,15 @@
 $backgroundColor: #ffffff;
 $bodyColor: #000000;
-$bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+$bodyFont: 'Red Hat Display', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
 body {
   background: $backgroundColor;
   color: $bodyColor;
   font-family: $bodyFont;
 }
-@theme {
-    --font-sans: 'Red Hat Display', ui-sans, system-ui, sans, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-        'Noto Color Emoji';
-}
 
 [x-cloak] {
     display: none;
-}
-
-body {
-  font-family: 'Red Hat Display', sans;
 }
 .coderic {
   vertical-align: middle;
