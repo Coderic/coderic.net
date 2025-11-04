@@ -3,3 +3,15 @@ title: "Coderic Content Hub"
 description: "Public content network - Access shared APIs and datasets from the Coderic network"
 network: "HUB"
 remote_theme: Coderic/coderic.org
+
+# Plugins necesarios para remote theme
+plugins:
+  - jekyll-remote-theme
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+  
+# Sass configuration
+sass:
+  style: compressed
+  sourcemap: never
