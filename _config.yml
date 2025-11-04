@@ -10,8 +10,3 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-feed
-  
-# Sass configuration
-sass:
-  style: compressed
-  sourcemap: never
