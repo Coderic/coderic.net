@@ -165,10 +165,11 @@ remote_theme: Coderic/coderic.org
 
 ```toml
 name = "coderic-net"
-main = "functions/api/[[path]].js"
 compatibility_date = "2025-11-04"
 pages_build_output_dir = "_site"
 ```
+
+> **Note**: Las Functions se detectan autom?ticamente desde el directorio `/functions`
 
 ## ?? SEO
 
