@@ -1,0 +1,22 @@
+{
+  "name": "coderic-net",
+  "version": "1.0.0",
+  "description": "Coderic Content Hub - Public content network with APIs",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler pages dev _site",
+    "build": "jekyll build",
+    "deploy": "wrangler pages deploy _site"
+  },
+  "keywords": [
+    "coderic",
+    "content-hub",
+    "api",
+    "cloudflare-pages"
+  ],
+  "author": "Coderic Corporation",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}

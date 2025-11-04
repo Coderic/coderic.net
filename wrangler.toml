@@ -1,0 +1,11 @@
+name = "coderic-net"
+main = "functions/api/[[path]].js"
+compatibility_date = "2025-11-04"
+pages_build_output_dir = "_site"
+
+[build]
+command = "jekyll build"
+
+[[pages]]
+route = "/api/*"
+module = "functions/api/[[path]].js"
