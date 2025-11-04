@@ -2,55 +2,108 @@
 layout: layout_en
 navigation: portal.html
 ---
-<div class="bg-stone-800 jumbotron px-20 py-14 flex overflow-hidden">
-    <div class="w-1/2 text-white py-14">
-        <large class="inline-flex rounded-full text-xl border-stone-500 text-orange-500 border-2 pt-1 px-3">
-            <svg class="h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M8.4,18.2C8.78,18.7,9,19.32,9,20c0,1.66-1.34,3-3,3s-3-1.34-3-3s1.34-3,3-3c0.44,0,0.85,0.09,1.23,0.26l1.41-1.77 c-0.92-1.03-1.29-2.39-1.09-3.69l-2.03-0.68C4.98,11.95,4.06,12.5,3,12.5c-1.66,0-3-1.34-3-3s1.34-3,3-3s3,1.34,3,3 c0,0.07,0,0.14-0.01,0.21l2.03,0.68c0.64-1.21,1.82-2.09,3.22-2.32l0-2.16C9.96,5.57,9,4.4,9,3c0-1.66,1.34-3,3-3s3,1.34,3,3 c0,1.4-0.96,2.57-2.25,2.91v2.16c1.4,0.23,2.58,1.11,3.22,2.32l2.03-0.68C18,9.64,18,9.57,18,9.5c0-1.66,1.34-3,3-3s3,1.34,3,3 s-1.34,3-3,3c-1.06,0-1.98-0.55-2.52-1.37l-2.03,0.68c0.2,1.29-0.16,2.65-1.09,3.69l1.41,1.77C17.15,17.09,17.56,17,18,17 c1.66,0,3,1.34,3,3s-1.34,3-3,3s-3-1.34-3-3c0-0.68,0.22-1.3,0.6-1.8l-1.41-1.77c-1.35,0.75-3.01,0.76-4.37,0L8.4,18.2z"/></svg>
-            Content Hub
-        </large>
-        <h1 class="text-6xl font-bold mb-4 mt-4">
-            Shared Content Network</h1>
-        <p class="text-lg mb-4">Access public APIs and shared datasets from the Coderic network. Connect to our content distribution network for real-time data access.</p>
-        <a href="#explore" class="bg-orange-600 hover:bg-orange-500 text-white font-bold py-2 px-4 rounded-lg text-lg">Explore APIs</a>
-    </div>
-    <div class="w-1/2 h-96">
-        <img src="/images/hero-thumb.png" class="w-96 float-right" />
-    </div>
-</div>
-<div class="py-4" id="explore">
-    <div class="max-w-7xl mx-auto sm:px-6 lg:px-4">
-        <div class="text-center mb-8 mt-8">
-            <h2 class="text-4xl font-bold text-gray-800 mb-4">Public Content Network</h2>
-            <p class="text-lg text-gray-600">Access shared data through our open APIs and endpoints</p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-3 cards-animate">
-            <a href="/apis" class="card h-56 pt-8 rounded-lg shadow-md">
-                <div class="boxie">
-                    <div class="icon mb-4">
-                        <svg class="w-10 h-10 text-gray-500 mx-auto mt-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M8,3A2,2 0 0,0 6,5V9A2,2 0 0,1 4,11H3V13H4A2,2 0 0,1 6,15V19A2,2 0 0,0 8,21H10V19H8V14A2,2 0 0,0 6,12A2,2 0 0,0 8,10V5H10V3M16,3A2,2 0 0,1 18,5V9A2,2 0 0,0 20,11H21V13H20A2,2 0 0,0 18,15V19A2,2 0 0,1 16,21H14V19H16V14A2,2 0 0,1 18,12A2,2 0 0,1 16,10V5H14V3H16Z"/></svg>
-                    </div>
-                    <h3 class="text-lg font-semibold text-center mb-2">PUBLIC APIs</h3>
-                    <p class="text-center">RESTful APIs for accessing shared content data.</p>
+<!-- Hero Section -->
+<div class="bg-gradient-to-br from-stone-900 via-stone-800 to-stone-900 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            <!-- Content -->
+            <div class="text-white space-y-6 order-2 lg:order-1">
+                <div class="inline-flex items-center gap-2 rounded-full text-base sm:text-lg border-2 border-stone-600 text-orange-500 px-4 py-2">
+                    <svg class="h-5 w-5 sm:h-6 sm:w-6 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M8.4,18.2C8.78,18.7,9,19.32,9,20c0,1.66-1.34,3-3,3s-3-1.34-3-3s1.34-3,3-3c0.44,0,0.85,0.09,1.23,0.26l1.41-1.77 c-0.92-1.03-1.29-2.39-1.09-3.69l-2.03-0.68C4.98,11.95,4.06,12.5,3,12.5c-1.66,0-3-1.34-3-3s1.34-3,3-3s3,1.34,3,3 c0,0.07,0,0.14-0.01,0.21l2.03,0.68c0.64-1.21,1.82-2.09,3.22-2.32l0-2.16C9.96,5.57,9,4.4,9,3c0-1.66,1.34-3,3-3s3,1.34,3,3 c0,1.4-0.96,2.57-2.25,2.91v2.16c1.4,0.23,2.58,1.11,3.22,2.32l2.03-0.68C18,9.64,18,9.57,18,9.5c0-1.66,1.34-3,3-3s3,1.34,3,3 s-1.34,3-3,3c-1.06,0-1.98-0.55-2.52-1.37l-2.03,0.68c0.2,1.29-0.16,2.65-1.09,3.69l1.41,1.77C17.15,17.09,17.56,17,18,17 c1.66,0,3,1.34,3,3s-1.34,3-3,3s-3-1.34-3-3c0-0.68,0.22-1.3,0.6-1.8l-1.41-1.77c-1.35,0.75-3.01,0.76-4.37,0L8.4,18.2z"/>
+                    </svg>
+                    <span class="font-semibold">Content Hub</span>
                 </div>
-            </a>
-            <a href="/datasets" class="card h-56 pt-8 rounded-lg shadow-md">
-                <div class="boxie">
-                    <div class="icon mb-4">
-                        <svg class="w-10 h-10 text-gray-500 mx-auto mt-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12,3C7.58,3 4,4.79 4,7C4,9.21 7.58,11 12,11C16.42,11 20,9.21 20,7C20,4.79 16.42,3 12,3M4,9V12C4,14.21 7.58,16 12,16C16.42,16 20,14.21 20,12V9C20,11.21 16.42,13 12,13C7.58,13 4,11.21 4,9M4,14V17C4,19.21 7.58,21 12,21C16.42,21 20,19.21 20,17V14C20,16.21 16.42,18 12,18C7.58,18 4,16.21 4,14Z"/></svg>
-                    </div>
-                    <h3 class="text-lg font-semibold text-center mb-2">DATASETS</h3>
-                    <p class="text-center">Shared datasets available across the network.</p>
+                
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                    Shared Content Network
+                </h1>
+                
+                <p class="text-base sm:text-lg lg:text-xl text-stone-300 leading-relaxed">
+                    Access public APIs and shared datasets from the Coderic network. Connect to our content distribution network for real-time data access.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                    <a href="#explore" class="inline-flex items-center justify-center gap-2 bg-orange-600 hover:bg-orange-500 text-white font-bold py-3 px-6 rounded-lg text-base sm:text-lg transition-all duration-200 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:ring-offset-stone-900">
+                        Explore APIs
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                        </svg>
+                    </a>
+                    <a href="/network" class="inline-flex items-center justify-center gap-2 bg-stone-700 hover:bg-stone-600 text-white font-bold py-3 px-6 rounded-lg text-base sm:text-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-stone-500 focus:ring-offset-2 focus:ring-offset-stone-900">
+                        Network Status
+                    </a>
                 </div>
-            </a>
-            <a href="/endpoints" class="card h-56 pt-8 rounded-lg shadow-md">
-                <div class="boxie">
-                    <div class="icon mb-4">
-                        <svg class="w-10 h-10 text-gray-500 mx-auto mt-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17,12V3A1,1 0 0,0 16,2H3A1,1 0 0,0 2,3V17L6,13H16A1,1 0 0,0 17,12M21,6H19V15H6V17A1,1 0 0,0 7,18H18L22,22V7A1,1 0 0,0 21,6Z"/></svg>
-                    </div>
-                    <h3 class="text-lg font-semibold text-center mb-2">ENDPOINTS</h3>
-                    <p class="text-center">Direct access points to network content.</p>
-                </div>
-            </a>            
+            </div>
+            
+            <!-- Image -->
+            <div class="order-1 lg:order-2 flex justify-center lg:justify-end">
+                <img src="/images/hero-thumb.png" alt="Content Network Illustration" class="w-full max-w-md lg:max-w-lg h-auto" loading="eager"/>
+            </div>
         </div>
     </div>
 </div>
+
+
+<!-- Features Section -->
+<section id="explore" class="py-12 sm:py-16 lg:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Section Header -->
+        <div class="text-center mb-12 lg:mb-16">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+                Public Content Network
+            </h2>
+            <p class="text-base sm:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto">
+                Access shared data through our open APIs and endpoints
+            </p>
+        </div>
+        
+        <!-- Feature Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            <!-- API Card -->
+            <a href="/apis" class="group block bg-white border-2 border-gray-200 rounded-xl p-6 sm:p-8 hover:border-orange-500 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2">
+                <div class="flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 bg-orange-100 rounded-lg mb-6 group-hover:bg-orange-500 transition-colors duration-300 mx-auto">
+                    <svg class="w-8 h-8 sm:w-10 sm:h-10 text-orange-600 group-hover:text-white transition-colors duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M8,3A2,2 0 0,0 6,5V9A2,2 0 0,1 4,11H3V13H4A2,2 0 0,1 6,15V19A2,2 0 0,0 8,21H10V19H8V14A2,2 0 0,0 6,12A2,2 0 0,0 8,10V5H10V3M16,3A2,2 0 0,1 18,5V9A2,2 0 0,0 20,11H21V13H20A2,2 0 0,0 18,15V19A2,2 0 0,1 16,21H14V19H16V14A2,2 0 0,1 18,12A2,2 0 0,1 16,10V5H14V3H16Z"/>
+                    </svg>
+                </div>
+                <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 text-center group-hover:text-orange-600 transition-colors">
+                    PUBLIC APIs
+                </h3>
+                <p class="text-sm sm:text-base text-gray-600 text-center leading-relaxed">
+                    RESTful APIs for accessing shared content data
+                </p>
+            </a>
+            
+            <!-- Datasets Card -->
+            <a href="/datasets" class="group block bg-white border-2 border-gray-200 rounded-xl p-6 sm:p-8 hover:border-orange-500 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2">
+                <div class="flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 bg-blue-100 rounded-lg mb-6 group-hover:bg-blue-500 transition-colors duration-300 mx-auto">
+                    <svg class="w-8 h-8 sm:w-10 sm:h-10 text-blue-600 group-hover:text-white transition-colors duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12,3C7.58,3 4,4.79 4,7C4,9.21 7.58,11 12,11C16.42,11 20,9.21 20,7C20,4.79 16.42,3 12,3M4,9V12C4,14.21 7.58,16 12,16C16.42,16 20,14.21 20,12V9C20,11.21 16.42,13 12,13C7.58,13 4,11.21 4,9M4,14V17C4,19.21 7.58,21 12,21C16.42,21 20,19.21 20,17V14C20,16.21 16.42,18 12,18C7.58,18 4,16.21 4,14Z"/>
+                    </svg>
+                </div>
+                <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 text-center group-hover:text-blue-600 transition-colors">
+                    DATASETS
+                </h3>
+                <p class="text-sm sm:text-base text-gray-600 text-center leading-relaxed">
+                    Shared datasets available across the network
+                </p>
+            </a>
+            
+            <!-- Endpoints Card -->
+            <a href="/endpoints" class="group block bg-white border-2 border-gray-200 rounded-xl p-6 sm:p-8 hover:border-orange-500 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 sm:col-span-2 lg:col-span-1 sm:mx-auto lg:mx-0 sm:max-w-md lg:max-w-none">
+                <div class="flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 bg-green-100 rounded-lg mb-6 group-hover:bg-green-500 transition-colors duration-300 mx-auto">
+                    <svg class="w-8 h-8 sm:w-10 sm:h-10 text-green-600 group-hover:text-white transition-colors duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17,12V3A1,1 0 0,0 16,2H3A1,1 0 0,0 2,3V17L6,13H16A1,1 0 0,0 17,12M21,6H19V15H6V17A1,1 0 0,0 7,18H18L22,22V7A1,1 0 0,0 21,6Z"/>
+                    </svg>
+                </div>
+                <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 text-center group-hover:text-green-600 transition-colors">
+                    ENDPOINTS
+                </h3>
+                <p class="text-sm sm:text-base text-gray-600 text-center leading-relaxed">
+                    Direct access points to network content
+                </p>
+            </a>
+        </div>
+    </div>
+</section>
