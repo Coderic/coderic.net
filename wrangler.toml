@@ -1,6 +1,3 @@
 name = "coderic-net"
 compatibility_date = "2025-11-04"
 pages_build_output_dir = "_site"
-
-[build]
-command = "bundle exec jekyll build"
