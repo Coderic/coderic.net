@@ -2,7 +2,7 @@ url: "https://coderic.net"
 title: "Coderic Content Hub"
 description: "Public content network - Access shared APIs and datasets from the Coderic network"
 network: "HUB"
-remote_theme: Coderic/coderic.org
+remote_theme: Coderic/coderic.github.io
 
 # Plugins necesarios para remote theme
 plugins:
