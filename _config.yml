@@ -1,12 +1,71 @@
 url: "https://coderic.net"
+baseurl: ""
 title: "Coderic Content Hub"
 description: "Public content network - Access shared APIs and datasets from the Coderic network"
 network: "HUB"
-remote_theme: Coderic/coderic.github.io
 
-# Plugins necesarios para remote theme
+# Theme
+remote_theme: Coderic/jekyll-theme-coderic
+
+# Logo
+logo: "/images/logo.svg"
+
+# Navigation
+navigation:
+  - label: "Home"
+    url: "/"
+  - label: "APIs"
+    url: "/apis"
+  - label: "Datasets"
+    url: "/datasets"
+  - label: "Endpoints"
+    url: "/endpoints"
+  - label: "Network"
+    url: "/network"
+
+# Footer Links
+footer_links:
+  - label: "Documentation"
+    url: "https://github.com/Coderic/coderic.net"
+  - label: "API Docs"
+    url: "/endpoints"
+
+# Legal URLs
+privacy_url: "/privacy"
+legal_url: "/legal"
+tos_url: "/tos"
+
+# Auth URLs
+profile_url: "/profile"
+dashboard_url: "/dashboard"
+
+# Plugins
 plugins:
   - jekyll-remote-theme
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-feed
+  - jekyll-github-metadata
+
+# Sass configuration
+sass:
+  style: compressed
+  sourcemap: never
+
+# Exclude files
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .asset-cache
+  - .jekyll-assets-cache
+  - .bundle
+  - package.json
+  - package-lock.json
+  - wrangler.toml
+  - README.md
+  - notify-indexnow.sh
+  - indexnow-key.txt
+  - f8172f17bbe9e7dabb7a76a4a7be3d2f.txt
