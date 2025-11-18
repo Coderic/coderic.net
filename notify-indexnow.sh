@@ -16,7 +16,6 @@ PAYLOAD=$(cat <<'EOF'
     "https://coderic.net/apis",
     "https://coderic.net/datasets",
     "https://coderic.net/endpoints",
-    "https://coderic.net/network"
   ]
 }
 EOF
