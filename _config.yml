@@ -1,8 +1,13 @@
 url: "https://coderic.net"
 baseurl: ""
+<<<<<<< HEAD
 title: "Coderic"
 subtitle: "Content Hub, Stream & News"
 description: "Centro de contenido, documentación y comunicación. Hub de información del ecosistema Coderic - contenido, noticias, documentación y comunicación."
+=======
+title: "Coderic Network"
+description: "Public content network - Access shared APIs and datasets from the Coderic network"
+>>>>>>> a404e44a4ad50a89f5d22c425212f3507a376242
 network: "HUB"
 
 # Theme
