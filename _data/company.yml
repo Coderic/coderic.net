@@ -1,0 +1,122 @@
+# Coderic Content Hub, Stream & News - Información de la Empresa
+
+name: "Coderic Content Hub, Stream & News"
+tagline: "Hub de Información del Ecosistema"
+description: "Centro de contenido, documentación y comunicación. Hub de información del ecosistema Coderic - contenido, noticias, documentación y comunicación."
+
+# Información Corporativa
+parent_company: "Coderic"
+founded: "2004"
+network: "HUB"
+
+# Misión y Visión
+mission: "Proporcionar un centro de información integral para el ecosistema Coderic, facilitando el acceso a contenido, noticias, APIs y recursos distribuidos a través de una red de contenido pública y accesible."
+vision: "Convertirnos en el hub de información líder para el ecosistema tecnológico, conectando desarrolladores, empresas y usuarios con contenido relevante, APIs públicas y recursos compartidos."
+
+# Valores Fundamentales
+values:
+  - title: "Accesibilidad"
+    description: "Todo el contenido y APIs son públicamente accesibles, promoviendo la transparencia y el acceso abierto a la información."
+    icon: "accessibility"
+  
+  - title: "Distribución"
+    description: "Red de contenido distribuido que garantiza alta disponibilidad y rendimiento global."
+    icon: "distribution"
+  
+  - title: "Actualización"
+    description: "Contenido y datos actualizados en tiempo real para mantener la información relevante y precisa."
+    icon: "updates"
+  
+  - title: "Comunicación"
+    description: "Centro de comunicación del ecosistema, facilitando la difusión de noticias y actualizaciones."
+    icon: "communication"
+  
+  - title: "Integración"
+    description: "APIs y endpoints diseñados para facilitar la integración con otros sistemas y servicios."
+    icon: "integration"
+  
+  - title: "Innovación"
+    description: "Streaming de contenido técnico y tecnologías avanzadas para la distribución de información."
+    icon: "innovation"
+
+# Estadísticas
+stats:
+  - number: "100+"
+    label: "APIs Públicas Disponibles"
+    icon: "api"
+  
+  - number: "50+"
+    label: "Datasets Compartidos"
+    icon: "datasets"
+  
+  - number: "24/7"
+    label: "Disponibilidad de Red"
+    icon: "uptime"
+  
+  - number: "Global"
+    label: "CDN Distribuido"
+    icon: "cdn"
+
+# Información de Contacto
+contact:
+  email: "hello@coderic.net"
+  support: "support@coderic.net"
+  api: "api@coderic.net"
+  
+# Redes Sociales
+social:
+  twitter: "https://x.com/Coderic"
+  linkedin: "https://linkedin.com/company/coderic/"
+  github: "https://github.com/Coderic"
+
+# Propiedades Relacionadas del Ecosistema
+coderic_network:
+  - name: "Coderic Organization"
+    url: "https://coderic.org"
+    description: "Organización y centro de coordinación de Coderic"
+  
+  - name: "Coderic Business & Fintech"
+    url: "https://coderic.co"
+    description: "División de soluciones de tecnología financiera y empresarial"
+  
+  - name: "Coderic Cloud"
+    url: "https://coderic.cloud"
+    description: "División de infraestructura y servicios en la nube"
+  
+  - name: "Coderic Content Hub"
+    url: "https://coderic.net"
+    description: "Hub de contenido, APIs y comunicación del ecosistema"
+
+# Servicios Principales
+services:
+  - name: "Content Hub"
+    description: "Gestión y distribución de contenido del ecosistema"
+    icon: "content"
+  
+  - name: "Stream"
+    description: "Servicios de streaming y transmisión de contenido en tiempo real"
+    icon: "stream"
+  
+  - name: "News"
+    description: "Noticias tecnológicas y actualizaciones del ecosistema"
+    icon: "news"
+  
+  - name: "APIs"
+    description: "Catálogo de APIs públicas para integración"
+    icon: "api"
+  
+  - name: "Endpoints"
+    description: "Puntos de acceso directo a la red de contenido"
+    icon: "endpoints"
+  
+  - name: "Datasets"
+    description: "Repositorio de datasets compartidos públicamente"
+    icon: "datasets"
+
+# Tecnologías
+technology:
+  apis: ["REST", "GraphQL", "WebSocket", "gRPC"]
+  formats: ["JSON", "CSV", "XML", "YAML"]
+  cdn: ["Cloudflare", "Global Distribution"]
+  streaming: ["Real-time", "WebSocket", "Server-Sent Events"]
+

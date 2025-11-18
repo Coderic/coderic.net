@@ -1,6 +1,8 @@
 ---
 layout: page
 ---
+{% assign company = site.data.company %}
+
 <!-- Hero Section -->
 <div class="bg-gradient-to-br from-stone-900 via-stone-800 to-stone-900 overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
@@ -11,20 +13,20 @@ layout: page
                     <svg class="h-5 w-5 sm:h-6 sm:w-6 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M8.4,18.2C8.78,18.7,9,19.32,9,20c0,1.66-1.34,3-3,3s-3-1.34-3-3s1.34-3,3-3c0.44,0,0.85,0.09,1.23,0.26l1.41-1.77 c-0.92-1.03-1.29-2.39-1.09-3.69l-2.03-0.68C4.98,11.95,4.06,12.5,3,12.5c-1.66,0-3-1.34-3-3s1.34-3,3-3s3,1.34,3,3 c0,0.07,0,0.14-0.01,0.21l2.03,0.68c0.64-1.21,1.82-2.09,3.22-2.32l0-2.16C9.96,5.57,9,4.4,9,3c0-1.66,1.34-3,3-3s3,1.34,3,3 c0,1.4-0.96,2.57-2.25,2.91v2.16c1.4,0.23,2.58,1.11,3.22,2.32l2.03-0.68C18,9.64,18,9.57,18,9.5c0-1.66,1.34-3,3-3s3,1.34,3,3 s-1.34,3-3,3c-1.06,0-1.98-0.55-2.52-1.37l-2.03,0.68c0.2,1.29-0.16,2.65-1.09,3.69l1.41,1.77C17.15,17.09,17.56,17,18,17 c1.66,0,3,1.34,3,3s-1.34,3-3,3s-3-1.34-3-3c0-0.68,0.22-1.3,0.6-1.8l-1.41-1.77c-1.35,0.75-3.01,0.76-4.37,0L8.4,18.2z"/>
                     </svg>
-                    <span class="font-semibold">Content Hub, Stream & News</span>
+                    <span class="font-semibold">{{ company.network | upcase }}</span>
                 </div>
                 
                 <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                    Hub de Información del Ecosistema
+                    {{ company.tagline }}
                 </h1>
                 
                 <p class="text-base sm:text-lg lg:text-xl text-stone-300 leading-relaxed">
-                    Centro de contenido, documentación y comunicación. Todo lo relacionado con contenido, noticias, documentación y comunicación del ecosistema Coderic vive aquí.
+                    {{ company.description }}
                 </p>
                 
                 <div class="flex flex-col sm:flex-row gap-4 pt-4">
-                    <a href="#explore" class="inline-flex items-center justify-center gap-2 bg-orange-600 hover:bg-orange-500 text-white font-bold py-3 px-6 rounded-lg text-base sm:text-lg transition-all duration-200 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:ring-offset-stone-900">
-                        Explorar APIs
+                    <a href="#explorar" class="inline-flex items-center justify-center gap-2 bg-orange-600 hover:bg-orange-500 text-white font-bold py-3 px-6 rounded-lg text-base sm:text-lg transition-all duration-200 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:ring-offset-stone-900">
+                        Explorar Contenido
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
                         </svg>
@@ -45,15 +47,15 @@ layout: page
 
 
 <!-- Features Section -->
-<section id="explore" class="py-12 sm:py-16 lg:py-20 bg-white">
+<section id="explorar" class="py-12 sm:py-16 lg:py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Section Header -->
         <div class="text-center mb-12 lg:mb-16">
             <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-                Public Content Network
+                Red de Contenido Pública
             </h2>
             <p class="text-base sm:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto">
-                Access shared data through our open APIs and endpoints
+                Accede a datos compartidos a través de nuestras APIs y endpoints públicos
             </p>
         </div>
         
@@ -67,10 +69,10 @@ layout: page
                     </svg>
                 </div>
                 <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 text-center group-hover:text-orange-600 transition-colors">
-                    PUBLIC APIs
+                    APIs PÚBLICAS
                 </h3>
                 <p class="text-sm sm:text-base text-gray-600 text-center leading-relaxed">
-                    RESTful APIs for accessing shared content data
+                    APIs RESTful para acceder a datos de contenido compartido
                 </p>
             </a>
             
@@ -85,7 +87,7 @@ layout: page
                     DATASETS
                 </h3>
                 <p class="text-sm sm:text-base text-gray-600 text-center leading-relaxed">
-                    Shared datasets available across the network
+                    Datasets compartidos disponibles en toda la red
                 </p>
             </a>
             
@@ -100,9 +102,56 @@ layout: page
                     ENDPOINTS
                 </h3>
                 <p class="text-sm sm:text-base text-gray-600 text-center leading-relaxed">
-                    Direct access points to network content
+                    Puntos de acceso directo al contenido de la red
                 </p>
             </a>
         </div>
     </div>
 </section>
+
+<!-- Services Section -->
+<section class="py-12 sm:py-16 lg:py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12 lg:mb-16">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+                Servicios del Content Hub
+            </h2>
+            <p class="text-base sm:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto">
+                Gestión de contenido, streaming y noticias del ecosistema Coderic
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            {% for service in company.services %}
+            <div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 sm:p-8 border border-gray-200">
+                <div class="flex items-center justify-center w-16 h-16 bg-orange-100 rounded-lg mb-6 mx-auto">
+                    <svg class="w-8 h-8 text-orange-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4M11,16.5L6.5,12L7.91,10.59L11,13.67L16.59,8.09L18,9.5L11,16.5Z"/>
+                    </svg>
+                </div>
+                <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 text-center">{{ service.name }}</h3>
+                <p class="text-sm sm:text-base text-gray-600 text-center">{{ service.description }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Coderic Ecosystem Section -->
+<div class="py-12 sm:py-16 bg-stone-800 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-8 sm:mb-12">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-3 sm:mb-4">Parte del Ecosistema Coderic</h2>
+            <p class="text-lg sm:text-xl text-gray-300">{{ company.description }}</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+            {% for property in company.coderic_network %}
+            <a href="{{ property.url }}" target="_blank" class="bg-stone-700 p-4 sm:p-6 rounded-lg hover:bg-stone-600 transition-colors duration-300 text-center">
+                <h3 class="text-lg sm:text-xl font-bold mb-2 sm:mb-3 text-orange-400">{{ property.name }}</h3>
+                <p class="text-sm text-gray-300">{{ property.description }}</p>
+                <div class="mt-3 sm:mt-4 text-orange-500 text-sm font-semibold">Conocer Más →</div>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</div>

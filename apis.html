@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Public APIs
+title: APIs Públicas
 permalink: /apis
 ---
 <div class="bg-gradient-to-br from-orange-50 to-white py-12 sm:py-16 lg:py-20">
@@ -12,9 +12,9 @@ permalink: /apis
                 </svg>
                 APIs
             </div>
-            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Public APIs</h1>
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">APIs Públicas</h1>
             <p class="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto">
-                Access shared content through our RESTful APIs. All endpoints are publicly available for integration.
+                Accede a contenido compartido a través de nuestras APIs RESTful. Todos los endpoints están disponibles públicamente para integración.
             </p>
         </div>
         
@@ -28,8 +28,8 @@ permalink: /apis
                         </svg>
                     </div>
                     <div class="flex-1 min-w-0">
-                        <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2">REST API</h3>
-                        <p class="text-sm sm:text-base text-gray-600 mb-4">Standard RESTful API endpoints for content access</p>
+                        <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2">API REST</h3>
+                        <p class="text-sm sm:text-base text-gray-600 mb-4">Endpoints RESTful estándar para acceso a contenido</p>
                         <div class="bg-gray-50 rounded-lg p-3 overflow-x-auto">
                             <code class="text-xs sm:text-sm text-gray-800 font-mono break-all">GET https://api.coderic.net/v1/content</code>
                         </div>
@@ -47,7 +47,7 @@ permalink: /apis
                     </div>
                     <div class="flex-1 min-w-0">
                         <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2">GraphQL</h3>
-                        <p class="text-sm sm:text-base text-gray-600 mb-4">Flexible data retrieval with GraphQL queries</p>
+                        <p class="text-sm sm:text-base text-gray-600 mb-4">Recuperación flexible de datos con consultas GraphQL</p>
                         <div class="bg-gray-50 rounded-lg p-3 overflow-x-auto">
                             <code class="text-xs sm:text-sm text-gray-800 font-mono break-all">POST https://api.coderic.net/graphql</code>
                         </div>
@@ -65,7 +65,7 @@ permalink: /apis
                     </div>
                     <div class="flex-1 min-w-0">
                         <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2">WebSocket</h3>
-                        <p class="text-sm sm:text-base text-gray-600 mb-4">Real-time data streaming connections</p>
+                        <p class="text-sm sm:text-base text-gray-600 mb-4">Conexiones de streaming de datos en tiempo real</p>
                         <div class="bg-gray-50 rounded-lg p-3 overflow-x-auto">
                             <code class="text-xs sm:text-sm text-gray-800 font-mono break-all">wss://ws.coderic.net/stream</code>
                         </div>
@@ -82,8 +82,8 @@ permalink: /apis
                         </svg>
                     </div>
                     <div class="flex-1 min-w-0">
-                        <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Public CDN</h3>
-                        <p class="text-sm sm:text-base text-gray-600 mb-4">Fast global content delivery network</p>
+                        <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2">CDN Público</h3>
+                        <p class="text-sm sm:text-base text-gray-600 mb-4">Red de distribución de contenido global rápida</p>
                         <div class="bg-gray-50 rounded-lg p-3 overflow-x-auto">
                             <code class="text-xs sm:text-sm text-gray-800 font-mono break-all">https://cdn.coderic.net/assets/</code>
                         </div>
@@ -94,12 +94,12 @@ permalink: /apis
 
         <!-- Authentication Info -->
         <div class="bg-white rounded-xl shadow-lg p-6 sm:p-8 lg:p-10 border-2 border-orange-200">
-            <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">API Authentication</h2>
+            <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">Autenticación de API</h2>
             <p class="text-sm sm:text-base text-gray-600 mb-6">
-                All APIs are publicly accessible. No authentication required for read-only operations.
+                Todas las APIs son accesibles públicamente. No se requiere autenticación para operaciones de solo lectura.
             </p>
             <div class="bg-gray-900 rounded-lg p-4 sm:p-6 overflow-x-auto">
-                <p class="text-xs sm:text-sm text-green-400 mb-2 font-semibold">Example Request:</p>
+                <p class="text-xs sm:text-sm text-green-400 mb-2 font-semibold">Ejemplo de Solicitud:</p>
                 <pre class="text-xs sm:text-sm text-green-300"><code>curl -X GET "https://api.coderic.net/v1/content" \
      -H "Accept: application/json"</code></pre>
             </div>
