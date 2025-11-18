@@ -1,7 +1,8 @@
 url: "https://coderic.net"
 baseurl: ""
-title: "Coderic Content Hub"
-description: "Public content network - Access shared APIs and datasets from the Coderic network"
+title: "Coderic"
+subtitle: "Content Hub, Stream & News"
+description: "Centro de contenido, documentación y comunicación. Hub de información del ecosistema Coderic - contenido, noticias, documentación y comunicación."
 network: "HUB"
 
 # Theme
@@ -12,7 +13,7 @@ logo: "/images/logo.svg"
 
 # Navigation
 navigation:
-  - label: "Home"
+  - label: "Inicio"
     url: "/"
   - label: "APIs"
     url: "/apis"
@@ -20,7 +21,11 @@ navigation:
     url: "/datasets"
   - label: "Endpoints"
     url: "/endpoints"
-  - label: "Network"
+  - label: "Noticias"
+    url: "/news"
+  - label: "Stream"
+    url: "/stream"
+  - label: "Red"
     url: "/network"
 
 # Footer Links
