@@ -13,8 +13,6 @@ logo: "/images/logo.svg"
 
 # Navigation (compatible with flyout menu)
 navigation:
-  - label: "Inicio"
-    url: "/"
   - label: "Recursos"
     url: "/#resources"
     has_flyout: true
