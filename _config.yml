@@ -11,16 +11,25 @@ remote_theme: Coderic/jekyll-theme-coderic
 # Logo
 logo: "/images/logo.svg"
 
-# Navigation
+# Navigation (compatible with flyout menu)
 navigation:
   - label: "Inicio"
     url: "/"
-  - label: "APIs"
-    url: "/apis"
-  - label: "Datasets"
-    url: "/datasets"
-  - label: "Endpoints"
-    url: "/endpoints"
+  - label: "Contenido"
+    url: "/#content"
+    has_flyout: true
+    flyout_sections:
+      - title: "Recursos Públicos"
+        links:
+          - label: "APIs"
+            url: "/apis"
+            description: "APIs públicas y documentación"
+          - label: "Datasets"
+            url: "/datasets"
+            description: "Conjuntos de datos compartidos"
+          - label: "Endpoints"
+            url: "/endpoints"
+            description: "Endpoints y servicios disponibles"
   - label: "Stream"
     url: "/stream"
   - label: "Red"
