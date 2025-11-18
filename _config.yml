@@ -1,8 +1,8 @@
 url: "https://coderic.net"
 baseurl: ""
 title: "Coderic"
-subtitle: "Content Hub, Stream & News"
-description: "Centro de contenido, documentación y comunicación. Hub de información del ecosistema Coderic - contenido, noticias, documentación y comunicación."
+subtitle: "Network Hub"
+description: "Hub de red del ecosistema Coderic. APIs públicas, datasets compartidos, endpoints y servicios MQTT."
 network: "HUB"
 
 # Theme
@@ -13,8 +13,10 @@ logo: "/images/logo.svg"
 
 # Navigation (compatible with flyout menu)
 navigation:
-  - label: "Contenido"
-    url: "/#content"
+  - label: "Inicio"
+    url: "/"
+  - label: "Recursos"
+    url: "/#resources"
     has_flyout: true
     flyout_sections:
       - title: "Recursos Públicos"
@@ -28,8 +30,9 @@ navigation:
           - label: "Endpoints"
             url: "/endpoints"
             description: "Endpoints y servicios disponibles"
-  - label: "Stream"
-    url: "/stream"
+          - label: "MQTT"
+            url: "/mqtt"
+            description: "Servicios MQTT y mensajería"
   - label: "Red"
     url: "/network"
 
