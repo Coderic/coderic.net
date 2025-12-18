@@ -86,6 +86,10 @@ coderic_network:
   - name: "Coderic Content Hub"
     url: "https://coderic.net"
     description: "Hub de contenido, APIs y comunicación del ecosistema"
+  
+  - name: "Coderic Store"
+    url: "https://coderic.store"
+    description: "Tienda en línea de equipos informáticos y tecnología"
 
 # Servicios Principales
 services:
