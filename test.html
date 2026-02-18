@@ -3,10 +3,28 @@ layout: default
 title: Test API
 permalink: /test.html
 ---
-<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
-  <h1 class="text-2xl font-bold text-gray-900 mb-4">Test: /api/health</h1>
-  <p class="text-gray-600 mb-4">Comprobación del endpoint público del backend (Worker).</p>
-  <div id="test-result" class="p-4 rounded-lg bg-gray-100 text-sm font-mono">Cargando…</div>
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 space-y-10">
+  <section>
+    <h1 class="text-2xl font-bold text-gray-900 mb-4">Test: /api/health</h1>
+    <p class="text-gray-600 mb-4">Comprobación del endpoint público del backend (Worker).</p>
+    <div id="test-result" class="p-4 rounded-lg bg-gray-100 text-sm font-mono">Cargando…</div>
+  </section>
+
+  <section>
+    <h2 class="text-xl font-bold text-gray-900 mb-2">Auth0</h2>
+    <p class="text-gray-600 mb-3">Login y logout (audience: Coderic). Los endpoints con namespace requieren JWT.</p>
+    <div class="flex flex-wrap gap-3 items-center">
+      <button type="button" id="test-login-btn" class="px-4 py-2 text-sm font-medium text-white bg-orange-600 rounded-md hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-orange-500">Iniciar sesión</button>
+      <button type="button" id="test-logout-btn" class="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-md hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-orange-500">Cerrar sesión</button>
+      <span id="test-auth-status" class="text-sm text-gray-500">—</span>
+    </div>
+  </section>
+
+  <section id="test-profile-section" class="hidden">
+    <h2 class="text-xl font-bold text-gray-900 mb-2">Perfil (cuenta autenticada)</h2>
+    <p class="text-gray-600 mb-3">Datos de /api/account/profile (solo visibles para la sesión autenticada).</p>
+    <div id="test-profile-result" class="p-4 rounded-lg bg-gray-100 text-sm font-mono">Cargando…</div>
+  </section>
 </div>
 <script>
 (function () {
@@ -22,5 +40,52 @@ permalink: /test.html
       el.textContent = "Error: " + err.message;
       el.classList.add("text-red-800");
     });
+})();
+(function () {
+  var loginBtn = document.getElementById("test-login-btn");
+  var logoutBtn = document.getElementById("test-logout-btn");
+  var statusEl = document.getElementById("test-auth-status");
+  function updateStatus() {
+    var profileSection = document.getElementById("test-profile-section");
+    var profileResult = document.getElementById("test-profile-result");
+    if (window.CodericAuth0Client) {
+      window.CodericAuth0Client.isAuthenticated().then(function (ok) {
+        if (ok) {
+          window.CodericAuth0Client.getUser().then(function (u) {
+            statusEl.textContent = "Autenticado como " + (u && (u.name || u.email) || "—");
+          });
+          profileSection.classList.remove("hidden");
+          window.CodericAuth0Client.getTokenSilently().then(function (token) {
+            return fetch("/api/account/profile", { headers: { Authorization: "Bearer " + token } });
+          }).then(function (r) {
+            return r.json().then(function (data) {
+              profileResult.textContent = JSON.stringify(data, null, 2);
+              profileResult.classList.add("text-green-800");
+            });
+          }).catch(function (err) {
+            profileResult.textContent = "Error: " + err.message;
+            profileResult.classList.add("text-red-800");
+          });
+        } else {
+          statusEl.textContent = "No autenticado";
+          profileSection.classList.add("hidden");
+        }
+      });
+    } else {
+      statusEl.textContent = "Auth0 no configurado (auth0_client_id en _config.yml)";
+      profileSection.classList.add("hidden");
+    }
+  }
+  loginBtn.addEventListener("click", function () {
+    if (window.CodericAuth0Client) window.CodericAuth0Client.loginWithRedirect();
+    else alert("Configura auth0_client_id en _config.yml");
+  });
+  logoutBtn.addEventListener("click", function () {
+    if (!window.CodericAuth0Client) return;
+    var base = (window.CodericAuth0Config && window.CodericAuth0Config.baseurl) || "";
+    window.CodericAuth0Client.logout({ logoutParams: { returnTo: window.location.origin + base + "/" } });
+  });
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", updateStatus);
+  else setTimeout(updateStatus, 500);
 })();
 </script>
